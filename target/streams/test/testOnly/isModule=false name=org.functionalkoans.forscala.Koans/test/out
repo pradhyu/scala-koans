@@ -1,0 +1,29 @@
+[0m[[0minfo[0m] [0m[32mKoans:[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutAsserts:[0m[0m
+[0m[[0minfo[0m] [0m[32m- asserts can take a boolean argument[0m[0m
+[0m[[0minfo[0m] [0m[32m- asserts can include a message[0m[0m
+[0m[[0minfo[0m] [0m[32m- true and false values can be compared with should matchers[0m[0m
+[0m[[0minfo[0m] [0m[32m- booleans in asserts can test equality[0m[0m
+[0m[[0minfo[0m] [0m[32m- sometimes we expect you to fill in the values[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutValAndVar:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Vars are variables, and may be reassigned[0m[0m
+[0m[[0minfo[0m] [0m[32m- vals are values, and may not be reassigned, analogous to final in Java[0m[0m
+[0m[[0minfo[0m] [0m[32m- All vals and var types are inferred by default, but you can add the type explicitly[0m[0m
+[0m[[0minfo[0m] [0m[32m- If you want to include a space in your variable or value use backticks[0m[0m
+[0m[[0minfo[0m] [0m[32m- Any strange characters that you wish to use in a variable or value can be used after an underscore[0m[0m
+[0m[[0minfo[0m] [0m[32m- Backticks can also be used to spite your co-workers and send them into a spiral of confusion and agony![0m[0m
+[0m[[0minfo[0m] [0m[32m- A lazy val is assignment that will not evaluated until it is called. Note there is no lazy var[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutLiteralBooleans:[0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  + Please meditate on koan "Boolean literals are either true or false, using the true or false keyword" of suite "AboutLiteralBooleans" [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[32mInfo Provided - AboutLiteralBooleans[0m[0m
+[0m[[0minfo[0m] [0m[32mInfo Provided - Koans[0m[0m
