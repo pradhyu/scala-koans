@@ -4,11 +4,12 @@ name := "Scala Koans"
 
 version := "1.0"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.12.3"
 
 traceLevel := -1
 
 logLevel := Level.Info
+
 
 // disable printing timing information, but still print [success]
 showTiming := false
@@ -19,9 +20,5 @@ showSuccess := false
 // append -deprecation to the options passed to the Scala compiler
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 
-// disable updating dynamic revisions (including -SNAPSHOT versions)
-offline := true
+libraryDependencies += "org.scalatest" % "scalatest_2.12" % "3.0.5" % "test" 
 
-libraryDependencies ++= Seq(
-	"org.scalatest" %% "scalatest" % "1.9.1" % "test" withSources() withJavadoc()
-)
