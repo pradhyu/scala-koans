@@ -1,3 +1,5 @@
 project/**/*.class
 project/**/**
 target/
+.ensime_cache/
+ivyrepo/
