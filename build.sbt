@@ -10,6 +10,8 @@ traceLevel := -1
 
 logLevel := Level.Info
 
+// scala throws weird error while it tries to do incremental build Int not in scala .. 
+fork := true
 
 // disable printing timing information, but still print [success]
 showTiming := false
