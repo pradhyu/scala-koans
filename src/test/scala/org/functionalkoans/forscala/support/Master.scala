@@ -6,8 +6,14 @@ import language.reflectiveCalls
 
 object Master extends Stopper {
   var studentNeedsToMeditate = false
+//overriede the abstract  lasses
+  @volatile private var stopWasRequested = false
+  def stopRequested: Boolean = true
+  def requestStop(): Unit = {
+    stopWasRequested = true
+  }
 
-  override def apply() = studentNeedsToMeditate
+  def apply() = studentNeedsToMeditate
 
   type HasTestNameAndSuiteName = {
     val suiteName: String

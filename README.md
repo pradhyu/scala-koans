@@ -24,7 +24,7 @@ The Scala Koans Exercises are now using Luke Amdor’s runner and SBT 0.10. To s
 > namaste
 Or, you can run specific koans (e.g., AboutAsserts) with:
 
-> ~test-only org.functionalkoans.forscala.AboutAsserts
+> ~testOnly org.functionalkoans.forscala.AboutAsserts
 This will run the koans, and you will get a “Pending” status from the tests when the failure is a result of a “fill in the blank” error or an “Error” when you’ve filled it in with something wrong. From that point on, you will be able to edit the Scala files and make appropriate changes to get the tests to work.
 
 SBT will run the tests when you make changes. Scroll back through the messages to the first error and make the change to fix the error.

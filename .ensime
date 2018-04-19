@@ -18,9 +18,9 @@
    :targets ("/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/classes")
    :test-targets ("/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/test-classes")
    :depends-on-modules nil
-   :compile-deps ("/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-library.jar")
+   :compile-deps ("/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-library.jar" "/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-reflect.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar")
    :runtime-deps nil
-   :test-deps ("/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-reflect.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar")
+   :test-deps ("/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar")
    :doc-jars ("/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/scala-koans_2.12-1.0-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.3-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.3-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/docs/scala-xml_2.12-1.0.6-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/docs/scalactic_2.12-3.0.5-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/docs/scalatest_2.12-3.0.5-javadoc.jar")
    :reference-source-roots ("/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.3-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.3-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.5-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar")))
  :projects ((
@@ -30,16 +30,16 @@
     :targets ("/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/classes")
     :scalac-options ("-deprecation" "-unchecked" "-feature" "-Ymacro-expand:discard")
     :javac-options nil
-    :library-jars ("/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-library.jar")
-    :library-sources ("/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.3-sources.jar")
-    :library-docs ("/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/scala-koans_2.12-1.0-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.3-javadoc.jar")) (
+    :library-jars ("/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-library.jar" "/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-reflect.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar")
+    :library-sources ("/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.3-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.3-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.5-sources.jar")
+    :library-docs ("/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/scala-koans_2.12-1.0-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.12.3-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.3-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/docs/scalactic_2.12-3.0.5-javadoc.jar")) (
     :id (:project "scala-koans" :config "test")
     :depends ((:project "scala-koans" :config "compile"))
     :sources ("/Users/pkshrestha/workspace/scala-koans/src/test/java" "/Users/pkshrestha/workspace/scala-koans/src/test/scala-2.12" "/Users/pkshrestha/workspace/scala-koans/src/test/scala" "/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/src_managed/test")
     :targets ("/Users/pkshrestha/workspace/scala-koans/target/scala-2.12/test-classes")
     :scalac-options ("-deprecation" "-unchecked" "-feature" "-Ymacro-expand:discard")
     :javac-options nil
-    :library-jars ("/Users/pkshrestha/.sbt/boot/scala-2.12.3/lib/scala-reflect.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar")
-    :library-sources ("/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.3-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/srcs/scalactic_2.12-3.0.5-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar")
-    :library-docs ("/Users/pkshrestha/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.12.3-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/docs/scala-xml_2.12-1.0.6-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scalactic/scalactic_2.12/docs/scalactic_2.12-3.0.5-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/docs/scalatest_2.12-3.0.5-javadoc.jar")))
+    :library-jars ("/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar")
+    :library-sources ("/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.6-sources.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/srcs/scalatest_2.12-3.0.5-sources.jar")
+    :library-docs ("/Users/pkshrestha/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/docs/scala-xml_2.12-1.0.6-javadoc.jar" "/Users/pkshrestha/.ivy2/cache/org.scalatest/scalatest_2.12/docs/scalatest_2.12-3.0.5-javadoc.jar")))
 )

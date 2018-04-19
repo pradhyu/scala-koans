@@ -1,9 +1,10 @@
 package org.functionalkoans.forscala
 
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest._
+import Matchers._
 import support.KoanSuite
 
-class AboutFormatting extends KoanSuite with ShouldMatchers {
+class AboutFormatting extends KoanSuite with Matchers {
 
   koan("String can be placed in format") {
     val s = "Hello World"
@@ -23,16 +24,14 @@ class AboutFormatting extends KoanSuite with ShouldMatchers {
 
   }
 
-  koan("Character Literals can be an escape sequence, including octal or hexidecimal") {
+  koan("Character Literals can be an escape sequence, hexidecimal") {
 
     val c = '\u0061' //unicode for a
-    val d = '\141' //octal for a
     val e = '\"'
     val f = '\\'
 
 
     "%c".format(c) should be(__)
-    "%c".format(d) should be(__)
     "%c".format(e) should be(__)
     "%c".format(f) should be(__)
   }

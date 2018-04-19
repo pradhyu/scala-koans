@@ -1,9 +1,11 @@
 package org.functionalkoans.forscala
 
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest._
+import Matchers._
+
 import support.KoanSuite
 
-class AboutLiteralStrings extends KoanSuite with ShouldMatchers {
+class AboutLiteralStrings extends KoanSuite with Matchers {
 
   koan("Character Literals are quoted with single quotes") {
     val a = 'a'
@@ -19,12 +21,6 @@ class AboutLiteralStrings extends KoanSuite with ShouldMatchers {
     c.toString should be(__)
   }
 
-  koan("Character Literals can use octal as well") {
-    val d = '\141' //octal for a
-
-    d.toString should be(__)
-  }
-
   koan("Character Literals can use escape sequences") {
     val e = '\"'
     val f = '\\'
@@ -38,10 +34,6 @@ class AboutLiteralStrings extends KoanSuite with ShouldMatchers {
     a should be(__)
   }
 
-  koan("String Literals can contain escape sequences.") {
-    val a = "An \141pple \141 d\141y keeps the doctor \141w\141y"
-    a should be(__)
-  }
 
   koan("""Multiline String literals
 	are surrounded

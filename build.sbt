@@ -1,4 +1,4 @@
-addCommandAlias("namaste", "~test-only org.functionalkoans.forscala.Koans")
+addCommandAlias("namaste", "~testOnly org.functionalkoans.forscala.Koans")
 
 name := "Scala Koans"
 
@@ -20,5 +20,9 @@ showSuccess := false
 // append -deprecation to the options passed to the Scala compiler
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 
-libraryDependencies += "org.scalatest" % "scalatest_2.12" % "3.0.5" % "test" 
+resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
+
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"  % "test"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 
